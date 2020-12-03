@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+    ports:
+      - "5432:5432"
+
+  example-service:
+    image: com.github.gregwhitaker/springboot-webflux-apikey-example:0.1.0
+    environment:
+      spring_profiles_active: localdocker
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
