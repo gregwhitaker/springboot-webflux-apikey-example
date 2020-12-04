@@ -1,5 +1,5 @@
 # springboot-webflux-apikey-example
-![build](https://github.com/gregwhitaker/springboot-webflux-apikey-example/workflows/Java%20CI%20with%20Gradle/badge.svg)
+![build](https://github.com/gregwhitaker/springboot-webflux-apikey-example/workflows/Build/badge.svg)
 
 An example of authenticating with a Spring Boot WebFlux application using an API key.
 
